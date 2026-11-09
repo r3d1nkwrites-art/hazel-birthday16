@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #b8f5b8,
+        #e8ffe8
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    overflow: hidden;
+}
+
+
+/* MAIN CARD */
+
+.container {
+    background: #fffef8;
+
+    padding: 50px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+    width: 500px;
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 4px solid #a8dca8;
+
+    position: relative;
+}
+
+
+/* SNOOPY */
+
+.snoopy {
+    font-size: 60px;
+
+    margin-bottom: 5px;
+}
+
+
+/* TITLES */
+
+h1 {
+    color: #2e8b57;
+
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+
+/* TEXT */
+
+p {
+    color: #555;
+
+    font-size: 21px;
+
+    line-height: 1.6;
+}
+
+
+/* BUTTONS */
+
+button {
+    margin: 10px;
+
+    padding: 15px 30px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #2e8b57;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #256d46;
+
+    transform: scale(1.05);
+}
+
+
+/* BIRTHDAY CONTENT */
+
+.birthday-reveal {
+    text-align: center;
+
+    max-width: 550px;
+}
+
+
+/* BIG MESSAGE */
+
+.big-message {
+    font-size: 26px;
+
+    font-weight: bold;
+
+    color: #2e8b57;
+}
+
+
+/* MOVING BUTTON */
+
+#yesButton {
+    position: relative;
+}
+
+
+/* LOADING BAR */
+
+.loading-bar {
+    width: 350px;
+
+    height: 20px;
+
+    background: #d9f2d9;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    margin: 25px auto;
+}
+
+.loading-progress {
+    height: 100%;
+
+    width: 0%;
+
+    background: #2e8b57;
+
+    border-radius: 20px;
+
+    animation: loading 4s forwards;
+}
+
+@keyframes loading {
+
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+
+/* VIDEO */
+
+video {
+    width: 100%;
+
+    max-width: 500px;
+
+    border-radius: 15px;
+
+    margin-top: 15px;
+}
+
+
+/* DECORATIONS */
+
+.container::before {
+    content: "☁️  🌼";
+
+    position: absolute;
+
+    top: 15px;
+    left: 20px;
+
+    font-size: 25px;
+}
+
+.container::after {
+    content: "🌼  ☁️";
+
+    position: absolute;
+
+    bottom: 15px;
+    right: 20px;
+
+    font-size: 25px;
+}
